@@ -207,6 +207,21 @@ def title_by_actor(matches: List[str]) -> List[str]:
             result.append(get_title(movie))
     return result
 
+def year_by_director(matches: List[str]) -> List[str]:
+    """Finds titles of all movies that the given actor was in
+
+    Args:
+        matches - a list of 1 string, just the actor
+
+    Returns:
+        a list of movie titles that the actor acted in
+    """
+    director = matches [0]
+    result = []
+    for movie in movie_db:
+        if get_director(movie) == director:
+            result.append(get_year(movie))
+    return result
 
 # dummy argument is ignored and doesn't matter
 def bye_action(dummy: List[str]) -> None:
