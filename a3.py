@@ -281,6 +281,7 @@ def query_loop() -> None:
     print("\nSo long!\n")
 
 
+
 # uncomment the following line once you've written all of your code and are ready to try
 # it out. Before running the following line, you should make sure that your code passes
 # the existing asserts.
@@ -301,7 +302,7 @@ if __name__ == "__main__":
     ), "failed title_before_year test"
     assert isinstance(title_after_year(["1990"]), list), "title_after_year not returning a list"
     assert sorted(title_after_year(["1990"])) == sorted(
-        ["boyz n the hood", "dead again", "the crying game", "flirting", "malcolm x"]
+        ["boyz n the hood", "dead again", "the crying game", "flirting", "malcolm x", "Good Will Hunting"]
     ), "failed title_after_year test"
     assert isinstance(director_by_title(["jaws"]), list), "director_by_title not returning a list"
     assert sorted(director_by_title(["jaws"])) == sorted(

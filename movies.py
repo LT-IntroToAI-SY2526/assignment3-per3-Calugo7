@@ -117,6 +117,19 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
         ],
     ),
     (
+        "Good Will Hunting",
+        "Gus Van Sant",
+        1997,
+        [
+            "Matt Damon",
+            "Ben Affleck",
+            "Robbin Williams",
+            "Minnie Driver",
+            "Cole Hauser",
+            "Stellen Skarsgard",
+        ],
+    ),
+    (
         "lawrence of arabia",
         "david lean",
         1962,
